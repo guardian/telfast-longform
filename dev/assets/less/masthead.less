@@ -1,0 +1,86 @@
+/* ============================================
+
+	Masthead
+
+=============================================== */
+
+
+.masthead {
+	.relative;
+	background-color: #232323;
+	overflow: hidden;
+	color: @color-text-reverse;
+	margin: 0 auto @30px;
+
+	@media @tablet {
+		margin: 0 auto @45px;
+	}
+
+	@media @desktop {
+		margin: 0 auto @90px;
+	}
+
+	// content
+	.masthead__wrapper {
+		.absolute;
+		.text-center;
+		top: 50%;
+		transform: translate(0, -50%);
+		z-index: 10;
+		width: 100%;
+
+		h1, h2 {
+			text-shadow: @2px @6px @30px rgba(0,0,0,0.25);
+			margin: 0 auto;
+			max-width: unit(700 / 16, rem);
+		}
+
+		h1 {
+			.font-normal;
+			.font-xxxl;
+			margin: 0 auto @21px;
+
+			@media @desktop {
+				margin: 0 auto @45px;
+			}
+		}
+
+		h2 {
+			.font-light;
+		}
+	}
+	// video
+	.masthead__video {
+		.relative;
+		.bg-image-fill;
+		overflow: hidden;
+		padding-top: 150%;
+		max-height: 100vh;
+
+		@media @mobile-lg {
+			padding-top: 100%;
+		}
+
+		@media @tablet {
+			padding-top: 75%;
+		}
+
+		@media @desktop {
+			padding-top: 56.25%;
+		}
+
+		.video {
+			.absolute-fill;
+			overflow: hidden;
+			opacity: 0.5;
+
+			video {
+				.absolute-fill;
+				min-height: 100%;
+				max-width: none;
+				object-fit: cover;
+
+			}
+		}
+	}
+}

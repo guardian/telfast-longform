@@ -1,0 +1,151 @@
+/* ============================================
+
+	Primary Page Content
+
+=============================================== */
+
+.part-diagram-responsive {
+	width: 30%;
+
+	img {
+		.absolute;
+		top: 50%;
+		left: 0;
+		transform: translate(0, -50%);
+		// visual centering offset
+		margin-top: -@9px;
+	}
+}
+
+// define page content
+
+.page-content {
+	.content__article {
+		padding: @12px 0 @24px;
+	}
+	.credit {
+		max-width: 220px;
+		.font-xs;
+		padding: @18px 0 @24px;
+		border-top: @1px dashed tint(@color-text, 60%);
+		p {
+			margin-bottom: @9px;
+		}
+
+		.share {
+			margin: @12px 0;
+			a {
+				cursor: pointer;
+				.circle;
+				.inline-block;
+				.text-center;
+				width: @39px;
+				height: @39px;
+				background: white;
+				margin: 0 @9px 0 0;
+				vertical-align: top;
+				color: tint(@color-text, 20%);
+
+				.fa {
+					.font-base;
+					margin: @9px 0 0;
+				}
+
+				&.tw,
+				&.fb {
+					color: @color-text-reverse;
+				}
+
+				&.tw { background-color: #1da1f2; }
+				&.fb { background-color: #3b5998; }
+			}
+		}
+	}
+
+
+	// parts of the body figure
+
+	.parts-of-the-body {
+		background: url('~assets/img/pattern.png') @color-bg-alt repeat 50% 50%;
+		padding: 0 @24px @24px;
+		.font-base;
+
+		@media @tablet {
+			padding: 0 @39px @24px;
+		}
+
+		header {
+			background: url('~assets/img/bacteria.svg') no-repeat 50% 0;
+			background-size: unit(260 / 16, rem) auto;
+			.text-center;
+			padding-top: unit(180 / 16, rem);
+
+			h2 {
+				.font-lg;
+				.font-medium;
+				margin: 0 0 @12px;
+			}
+
+			p {
+				.font-sm;
+				margin: 0 auto @30px;
+				max-width: unit(560 / 16, rem);
+			}
+		}
+
+		.part {
+			padding: @27px 0;
+			.relative;
+			.diagram {
+				width: 100%;
+				.text-center;
+
+				@media @mobile-lg {
+					.part-diagram-responsive;
+					width: 34%;
+				}
+				@media @tablet {
+					.part-diagram-responsive;
+				}
+
+				@media @xwide  	{ width: 25%; }
+
+
+			}
+			.desc {
+				width: 100%;
+				@media @mobile-lg 	{ width: 66%; }
+				@media @tablet 			{ width: 70%; }
+				@media @xwide 			{ width: 75%; }
+
+				h3 {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+
+// link copied success
+
+.copy-link-success {
+	.hidden;
+	margin: @12px 0;
+	.text-center;
+	.round(6);
+
+	top: 0;
+	right: 0;
+	z-index: 20;
+	padding: @9px @18px;
+	background: @color-bg-reverse;
+	color: @color-text-reverse;
+	border-bottom: @1px solid darken(@color-bg-reverse, 5%);
+
+	p {
+		.font-xs;
+		.font-medium;
+		margin: 0 !important;
+	}
+}

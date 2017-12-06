@@ -1,0 +1,101 @@
+/* ============================================
+
+	Carousel
+
+=============================================== */
+
+@import './vendor/slick';
+
+.carousel {
+	.relative;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 63.333333%;
+	overflow: hidden;
+	background: url('~assets/img/pattern.png') @color-bg-alt repeat 50% 50%;
+
+
+	.carousel__slides,
+	.slick-list,
+	.slick-track,
+	.carousel__slide {
+		.list-reset;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.carousel__slides {
+		.absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 10;
+
+		.carousel__slide {
+			.no-select;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+	}
+}
+
+// Carousel interactive list
+
+ol.carousel-switch {
+	.list-reset;
+	margin: @45px 0 0;
+	counter-reset: steps;
+
+	li {
+		.relative;
+		cursor: pointer;
+		margin: @24px 0;
+
+		transition: color 0.2s;
+
+		&:before {
+			.absolute;
+			.text-center;
+			.circle;
+			.font-medium;
+			.border-box;
+
+			content: counter(steps);
+			counter-increment: steps;
+
+			left: @24px;
+			top: 50%;
+			transform: translate(0, -50%);
+			margin-top: -@2px;
+			line-height: 0;
+			padding: @18px 0 0 @1px;
+
+			width: @36px;
+			height: @36px;
+
+			background-color: @color-bg-reverse;
+			color: @color-text-reverse;
+
+			transition: color 0.2s, background-color 0.2s;
+		}
+
+		span {
+			.block;
+			padding-left: @90px;
+		}
+
+		&.active {
+			cursor: default;
+			color: @color-primary;
+			.font-medium;
+			&:before {
+				background-color: @color-primary;
+			}
+		}
+	}
+}

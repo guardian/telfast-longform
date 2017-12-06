@@ -1,0 +1,183 @@
+doctype html
+
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+		title The Guardian – Telfast Allergies
+
+		//- iframe messenger
+		script(src="//interactive.guim.co.uk/libs/iframe-messenger/iframeMessenger.js")
+		script iframeMessenger.enableAutoResize({ absoluteHeight: true });
+
+		//- icons
+		link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', type='text/css')
+
+		//- og tags
+		meta(property="og:type", content="article")
+		meta(property="og:title", content="What causes allergies?")
+		meta(property="og:description", content="While research into the exact causes of common allergies such as hay fever is ongoing, there are clues as to why some people suffer while others don’t.")
+		meta(property="og:image", content="https://telfast-longform.guardian.gradestage.com/static/image/share.jpg")
+
+	body
+		//- main content
+		main
+			article
+
+
+				section.masthead
+					.masthead__video
+						.video
+							video(autoplay, muted, loop)
+								source(src="static/video/pollen.mp4", type="video/mp4")
+					.masthead__wrapper
+						.container
+							h1 What causes allergies?
+							h2 While research into the exact causes of common allergies such as hay fever is ongoing, there are clues as to why some people suffer while others don’t.
+
+
+				section.page-content
+					.container
+						.row
+
+							//- content
+							.col-md-8.col-lg-7.col-md-push-4.col-lg-push-3
+								.content__article
+
+									p Allergic diseases are among the fastest growing chronic conditions in Australia, according to the ASCIA Allergy in Australia Submission 2014. These include food, insect and drug allergies (including anaphylaxis), asthma, allergic rhinitis (hay fever) and eczema, with almost 20% of the population having at least one allergic disease, and this figure increasing.
+									p Allergy is essentially the body’s reaction to perceived danger. The immune system reacts to substances in the environment (known as allergens), which are found in pollen, dust mites, pet hair, mould, ticks, insects, food and some medicines, and are harmless for most people.
+									p For those who suffer from allergies, symptoms vary from person to person but typically include itchy and runny nose and/or eyes, skin rashes, bowel irritation and asthma.
+
+									p So why do some people suffer, while others don’t? &ldquo;That’s the million dollar question in allergy,&rdquo; says Dr Connie Katelaris, Professor of Immunology and Allergy at Western Sydney University and Head of Unit, Department of Immunology at Campbelltown Hospital. &ldquo;There’s a genetic component, but what switches it on so that some people have it and others don’t, is unclear.&rdquo;
+									p While research is ongoing, experts believe there are a number of factors at play, including genetics, environment, diet and even the gut microbiome – the microbe population living in our intestine, which is unique to each person and is believed to play an increasingly important role in our overall health.
+
+									blockquote
+										| &ldquo;The
+										em  microbiome
+										|  population living in our intestine is believed to play an increasingly
+										em  important role
+										|  in our
+										em  overall&nbsp;health
+										| .&rdquo;
+
+									h3 Genetics &amp; allergens
+									p Some people are more genetically predisposed than others to have an allergic reaction. &ldquo;It’s something we inherit,&rdquo; explains Dr Katelaris. &ldquo;That genetic predisposition interacts with a range of environmental factors. With hay fever, a person’s immune system deviates towards allergic responses to things rather than making a more protective or suppressive effect.&rdquo;
+									p When exposed to an allergen, those with a predisposition to allergy will experience a physical reaction (see below). Their immune system will start producing antibodies called Immunoglobulin E (IgE), which travel to special cells called mast cells, which release chemicals, including histamine, causing an allergic reaction.
+									p &ldquo;We all have IgE antibodies, but allergic people make more of them and they tend to be directed to innocuous proteins in the environment,&rdquo; says Dr Katelaris. &ldquo;So if I’m allergic and I have this predisposition, I might start making allergic responses to dust mites or pollen, whereas these things are innocuous to the vast majority of the population and their immune system totally ignores it.&rdquo;
+									p But for someone who suffers allergy, such as hay fever, the body mistakenly identifies a typically harmless substance (allergen) as a threat and the immune system responds by releasing histamine and other chemicals that cause inflammation in the nose, throat, eyes, ears, skin and mouth.
+
+									hr
+
+									h3.text-center.margin-lg The biochemistry that sets off an allergic reaction
+
+									.carousel(data-carousel)
+										.carousel__slides
+											img.carousel__slide(src="static/image/biochemistry_1.gif", width="600px", height="382px")
+											img.carousel__slide(src="static/image/biochemistry_2.gif", width="600px", height="382px")
+											img.carousel__slide(src="static/image/biochemistry_3.gif", width="600px", height="382px")
+
+									ol.carousel-switch
+										li.active(data-carousel-control)
+											span Body is re-exposed to an allergen. Plasma cells produce antibodies quickly &amp; more aggressively.
+										li(data-carousel-control)
+											span Allergens bind to the antibodies already on mast cells and more antibodies join to the mast cell.
+										li(data-carousel-control)
+											span Mast cells release chemicals such as histamine. Histamine binds to receptors on the surface of blood vessels and cause swelling &amp; inflammation.
+
+									hr
+
+									h3 Physical reaction
+									p Each person’s allergic triggers are different, as are their reactions and symptoms. Generally speaking, when exposed to allergens, allergic people develop a physical immune reaction that leads to inflammation somewhere in the body.
+									p &ldquo;For those who are allergic, that IgE antibody combined with the allergen will activate cells called mast cells, which are the orchestrators of the allergic response. When mast cells are activated, they release lots of active chemicals – histamine being the best known,&rdquo; says Dr Katelaris.
+									p &ldquo;These chemicals have downstream effects – causing blood vessels to open up so fluid leaks out and they stimulate nerve endings so itch occurs. In the lungs this can have a response of causing muscle constriction so the body starts to wheeze and cough and produce mucus. In the gut it can cause hypersecretion, leading to diarrhoea and cramps.
+									p &ldquo;With hay fever, the allergic reaction affects the conjunctiva (the outer lining of the eye), the nasal mucus membrane, and sometimes the sinus mucus membrane, and those who have asthma as well will also get a reaction in their airways.&rdquo;
+									p So depending on which organ the reaction is occurring in, there will be a set of symptoms that are the result of the effect of histamine and all the other active mediators that have come from the mast cells.
+
+									hr
+
+									//- Parts of the Body Figure
+									.parts-of-the-body
+										header
+											h2 Parts of the body
+											p ASCIA says that symptoms depend on the type of allergen and where it enters the body, and offers the following guide:
+
+										.part.row
+											.diagram.column
+												img(src="static/image/eyes.svg", width="130px", height="130px")
+											.desc.column
+												h3 Eyes:
+												p When allergens come in contact with the eyes, they may become red and swollen and start to water.
+
+										.part.row
+											.diagram.column
+												img(src="static/image/nose.svg", width="130px", height="130px")
+											.desc.column
+												h3 Nose and sinuses:
+												p When allergens are breathed in, the release of histamine causes the lining of the nose to produce lots of mucus and to become swollen and inflamed. It causes the nose to run and itch and violent sneezing may occur.
+
+										.part.row
+											.diagram.column
+												img(src="static/image/lungs.svg", width="130px", height="130px")
+											.desc.column
+												h3 Lungs and chest:
+												p Asthma can sometimes be triggered during an allergic reaction. When an allergen is breathed in, the lining of the passages in the lungs swells and makes breathing difficult. Not all asthma is caused by allergy, but in many cases allergy plays a part.
+
+										.part.row
+											.diagram.column
+												img(src="static/image/throat.svg", width="130px", height="130px")
+											.desc.column
+												h3 Throat:
+												p When allergens are inhaled, they may aggravate the breathing passages which can result in a sore throat rendering it difficult to breathe freely.
+
+										.part.row
+											.diagram.column
+												img(src="static/image/stomach.svg", width="130px", height="130px")
+											.desc.column
+												h3 Stomach and bowel:
+												p Most stomach upsets are caused by richness or spiciness in the food itself, rather than an actual allergy. However, foods that are most commonly associated with allergy include peanuts, seafood, dairy products and eggs.
+
+										.part.row
+											.diagram.column
+												img(src="static/image/skin.svg", width="130px", height="130px")
+											.desc.column
+												h3 Skin:
+												p Skin problems such as eczema (dry, red, itchy skin) and urticaria (also known as hives) often occur. Hives are white itchy bumps that look and feel like insect bites. Food may be a factor in some cases of hives and eczema.
+
+
+									hr
+
+									h3 Microbiome &amp; life stage
+									p The answer to allergies lies deeper than simply genetics, given that only some members of the one family can be predisposed to allergy, and the latest research is pointing to our gut health as the most likely culprit.
+									p &ldquo;Since the 1950s, there is absolutely no doubt that all the epidemiological studies show that allergy has increased in that time,&rdquo; says Dr Katelaris. &ldquo;There have been many theories that have come and gone to explain why, and there’s a lot of conflicting evidence, but I think the most logical unifying concept is this change in the gut microbiome.
+
+									blockquote.percent
+										.wrap
+											em
+												span Almost
+												b 20
+													span.percent %
+											| of the population has at least one allergic disease, and this figure is increasing
+
+
+									p &ldquo;Today we live in a more clean and sterile society so that we don’t get common infections as often as we used to – which promoted greater variety in the gut microbiome and tended to drive the immune response into a healthier pattern. Instead, loss of variability in the gut microbiome has driven the immune system more towards making allergic responses. So we think that that’s the overarching theory as to why – at least in many Western societies – allergy has increased.&rdquo;
+									p What we do know, according to Dr Katelaris, is that allergy begins with very early life and in-utero events, and that it is at these stages that the baby’s immune system is shaped. In fact, she says that even the mother’s diet and whether a vaginal or caesarean birth takes place can influence a baby’s microbiome make-up and tendency to allergy.
+									p And more often than not, allergies are first detected in early childhood. However, allergies can be triggered at any time.
+									p &ldquo;Allergic diseases are most commonly present in children, but there are cases of adults developing allergies later in life. A person who has allergies triggered later in life would still have been born with the genetic predisposition, but for some reason they’ve had protective responses and then something breaks that protection. It’s still not fully understood, but we believe the most common cause of later life allergy is a significant infection, and that tends to trigger something in the immune system,&rdquo; says Dr Katelaris.
+
+									p Regardless of when allergy first occurs, it is important that any allergic reaction be treated seriously and medical advice sought. For the majority of people, there are effective management and preventative measures that can be taken to deal with allergies safely and successfully.
+
+							//- credit
+							.col-md-4.col-lg-3.col-md-pull-8.col-lg-pull-7
+								.credit
+									p Paid for by
+									img(src="static/image/logo.png" width="140px", height="90px")
+									.share
+										a.fb(data-share-fb)
+											i.fa.fa-fw.fa-facebook
+										a.tw(data-share-tw)
+											i.fa.fa-fw.fa-twitter
+										a.other(data-share-link)
+											i.fa.fa-fw.fa-ellipsis-h
+
+										.copy-link-success(data-copy-success)
+											p Link copied to clipboard

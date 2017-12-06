@@ -1,0 +1,45 @@
+/* ============================================
+
+	Basics
+
+=============================================== */
+
+html, body {
+	margin: 0;
+	height: 100%;
+}
+
+// set box model
+
+header,
+section, article,
+div, li {
+	.border-box;
+}
+
+
+
+body {
+	.relative;
+	.font-normal;
+	.smooth-fonts;
+	font-size: 100%;
+	padding: 0;
+	line-height: @base-line-height;
+	color: @color-text;
+	background-color: @color-bg;
+	overflow-x: hidden;
+	// overflow: hidden; // required for live site in iFrame
+}
+
+
+main {
+	.font-base;
+	.border-box;
+	.relative;
+	@media @tablet {
+		.font-md;
+	}
+}
+
+
